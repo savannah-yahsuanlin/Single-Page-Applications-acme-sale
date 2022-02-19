@@ -1,0 +1,26 @@
+{
+  "name": "acme_sale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "npm run build -- --mode=development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore src/ --ignore dist/ & npm run build-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.16.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "axios": "^0.26.0",
+    "nodemon": "^2.0.15"
+  }
+}
